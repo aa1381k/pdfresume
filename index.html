@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            /* font-weight: 400; */
+        }
+
+        /* :root {
+            --main-color: rgb(84, 138, 199);
+        } */
+
+        body {
+            background-color: rgb(87, 85, 82);
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        .resume {
+            width: 23cm;
+            height: 30cm;
+            background-color: white;
+            margin: auto;
+            position: relative;
+        }
+
+        .head {
+            background-color: rgb(84, 138, 199);
+
+            height: 160px;
+            position: relative;
+        }
+
+        .name {
+            float: right;
+            margin-right: 100px;
+            margin-top: 40px;
+            font-size: 25px;
+            font-weight: 800;
+            color: white;
+        }
+
+        .position {
+            float: right;
+            margin-top: 100px;
+            margin-right: -140px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .image {
+            margin-left: 80px;
+            float: left;
+            margin-top: 60px;
+        }
+
+        .image img {
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background-size: cover;
+        }
+
+        .line {
+            width: 100%;
+            height: 10px;
+            background-color: silver;
+        }
+
+        .main {
+            width: 60%;
+            float: right;
+            margin: 30px;
+            margin-top: -40px;
+            font-weight: 600;
+        }
+
+        h2 {
+            color: rgb(84, 138, 199);
+            -webkit-text-fill-color: rgb(84, 138, 199);
+            font-weight: 750;
+        }
+
+        .about_me p {
+            width: 450px;
+            text-align: justify;
+        }
+
+        .education {
+            margin-top: 30px;
+        }
+
+        .article {
+            margin-top: 15px;
+        }
+
+        .education .article .education_head ul {
+            list-style: none;
+        }
+
+        .education .article .education_head ul li {
+            display: inline-block;
+            padding: 0 10px;
+        }
+
+        .education .article .education_head .dot {
+            padding: 0;
+            color: rgb(84, 138, 199);
+        }
+
+        .education .article .education_head .date,
+        .education .article .education_head .grade {
+            font-weight: 600;
+            color: silver;
+        }
+
+        .education .article .education_text {
+            width: 350px;
+            margin: 20px 0px 5px 90px;
+        }
+
+        .work_experience {
+            margin-top: 30px;
+        }
+
+        .work_experience .article .date {
+            background-color: rgb(84, 138, 199);
+            color: white;
+            text-indent: 10px;
+            width: 100px;
+            position: relative;
+        }
+
+        .work_experience .article .date:after {
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 11px 0 10px 15px;
+            border-color: transparent transparent transparent rgb(84, 138, 199);
+            left: 100px;
+        }
+
+        .work_experience .article .work_tittle {
+            color: silver;
+            margin: 10px 0;
+            font-weight: 600;
+        }
+
+        .work_experience .article p {
+            width: 450px;
+            text-align: justify;
+        }
+
+        .aside {
+            float: left;
+            width: 200px;
+            position: absolute;
+            left: 40px;
+            top: 300px;
+        }
+
+        .contact i {
+            color: rgb(84, 138, 199);
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .watermark {
+            width: 100%;
+            float: left;
+            margin-top: -500px;
+            transform: rotate(-50deg);
+            -webkit-transform: rotate(-50deg);
+            text-align: center;
+            z-index: 100;
+            display: none;
+        }
+
+        .watermark p {
+            font-size: 150px;
+            font-weight: 700;
+            color: gray;
+            opacity: .4;
+        }
+
+        .skills {
+            margin-top: 30px;
+        }
+
+        .skills ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .skills ul li {
+            margin: 10px 0;
+            height: 30px;
+        }
+
+        .skills ul li span:first-child {
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        .skills ul li span:last-child {
+            float: right;
+            width: 40px;
+            height: 100%;
+            text-align: center;
+            color: white;
+            font-weight: 600;
+            background-color: rgb(84, 138, 199);
+        }
+
+        .footer {
+            height: 20px;
+            width: 100%;
+            position: absolute;
+            bottom: 3px;
+        }
+
+        .footer .grayline {
+            height: 10px;
+            background-color: silver;
+        }
+
+        .footer .redline {
+            height: 40px;
+            background-color: rgb(84, 138, 199);
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="resume">
+        <div class="head">
+            <div class="name">
+                <h1>ALI ABDOLI</h1>
+            </div>
+            <div class="position">
+                <h3>programmer</h3>
+            </div>
+            <div class="image">
+                <img src="https://127.0.0.1/image/person.jpg" alt="">
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="main">
+
+            <div class="about_me">
+                <h2>ABOUT ME</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, officia!</p>
+            </div>
+
+            <div class="education">
+                <h2>EDUCATION</h2>
+
+                <div class="article">
+                    <div class="education_head">
+                        <ul>
+                            <li class="dot"><i class="fa fa-circle"></i></li>
+                            <li class="date">2008</li>
+                            <li class="grade">COLLEGE</li>
+                        </ul>
+                    </div>
+
+                    <div class="education_text">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+                <div class="article">
+                    <div class="education_head">
+                        <ul>
+                            <li class="dot"><i class="fa fa-circle"></i></li>
+                            <li class="date">2008</li>
+                            <li class="grade">COLLEGE</li>
+                        </ul>
+                    </div>
+
+                    <div class="education_text">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+                <div class="article">
+                    <div class="education_head">
+                        <ul>
+                            <li class="dot"><i class="fa fa-circle"></i></li>
+                            <li class="date">2008</li>
+                            <li class="grade">COLLEGE</li>
+                        </ul>
+                    </div>
+
+                    <div class="education_text">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="work_experience">
+                <h2>WORK EXPERIENCE</h2>
+
+                <div class="article">
+                    <div class="date">2017-2018</div>
+                    <h4 class="work_tittle">Lorem ipsum</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+
+                <div class="article">
+                    <div class="date">2017-2018</div>
+                    <h4 class="work_tittle">Lorem ipsum</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+
+                <div class="article">
+                    <div class="date">2017-2018</div>
+                    <h4 class="work_tittle">Lorem ipsum</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="aside">
+
+            <div class="contact">
+                <h2>CONTACT</h2>
+
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Tehran , Tehran</span>
+                </div>
+
+                <div class="phone">
+                    <i class="fas fa-phone"></i>
+                    <span>09120034300</span>
+                </div>
+
+                <div class="email">
+                    <i class="fas fa-envelope"></i>
+                    <span>a.abdoli.k81@gmail.com</span>
+                </div>
+
+                <div class="website">
+                    <i class="fas fa-globe"></i>
+                    <span>www.aliabdoli.com</span>
+                </div>
+
+            </div>
+
+            <div class="skills">
+                <h2>SKILLS</h2>
+
+                <ul>
+
+                    <li>
+                        <span>PYTHON</span>
+                        <span>80%</span>
+                    </li>
+
+                    <li>
+                        <span>C#</span>
+                        <span>80%</span>
+                    </li>
+
+                    <li>
+                        <span>HTML</span>
+                        <span>80%</span>
+                    </li>
+
+                    <li>
+                        <span>CSS</span>
+                        <span>80%</span>
+                    </li>
+
+                    <li>
+                        <span>JAVASCRIPT</span>
+                        <span>80%</span>
+                    </li>
+
+                    <li>
+                        <span>REACT</span>
+                        <span>80%</span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="watermark">
+            <p>ali abdoli</p>
+        </div>
+
+        <div class="footer">
+            <div class="grayline"></div>
+            <div class="redline"></div>
+        </div>
+    </div>
+</body>
+
+</html>
